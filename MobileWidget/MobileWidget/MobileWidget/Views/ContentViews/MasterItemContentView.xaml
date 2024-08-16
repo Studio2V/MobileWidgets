@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="MobileWidget.Views.ContentViews.MasterItemContentView"
+       x:Name="MasterItemContentPage"
+       Style="{StaticResource ItemFrameStyle}">
+    <ContentView>
+        <Grid RowDefinitions="*">
+
+            <StackLayout Grid.Row="0"
+                         VerticalOptions="CenterAndExpand">
+                <Label x:Name="H1Label"
+                       Style="{StaticResource H1LabelStyle}" />
+                <Label x:Name="H2Label"
+                       Style="{StaticResource H2LabelStyle}" />
+                <Label x:Name="H3Label"
+                       Style="{StaticResource H3LabelStyle}" />
+            </StackLayout>
+
+            <BoxView Grid.Row="0"
+                     Style="{StaticResource BoxViewItemStyle}" />
+        </Grid>
+    </ContentView>
+</Frame>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWidget.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Frame" x:Key="ItemFrameStyle">
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="HeightRequest" Value="120"/>
+                <Setter Property="WidthRequest" Value="120"/>
+                <Setter Property="Margin" Value="40"/>
+                <Setter Property="CornerRadius" Value="40"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+
+            <LinearGradientBrush x:Key="GradeientColorItem" EndPoint="1,1">
+                <GradientStop Color="LightGray"
+                            Offset="0.1" />
+                <GradientStop Color="Transparent"
+                            Offset="0.9" />
+            </LinearGradientBrush>
+
+            <Style TargetType="BoxView" x:Key="BoxViewItemStyle">
+                <Setter Property="Background" Value="{StaticResource GradeientColorItem}"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Opacity" Value="0.1"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="baseLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H1LabelStyle" BasedOn="{StaticResource baseLabelStyle}">
+                <Setter Property="FontSize" Value="10"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H2LabelStyle" BasedOn="{StaticResource baseLabelStyle}">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="24"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H3LabelStyle" BasedOn="{StaticResource baseLabelStyle}">
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

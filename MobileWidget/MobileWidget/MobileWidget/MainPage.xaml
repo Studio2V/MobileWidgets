@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWidget.MainPage"
+             x:Name="mainPage">
+    <!--<ContentPage.BindingContext>
+        <vm:HardwareDetailsViewmodel />
+    </ContentPage.BindingContext>-->
+
+    <ScrollView>
+
+        <FlexLayout x:Name="flexlayoutItem"
+                    Wrap="Wrap"
+                    JustifyContent="SpaceBetween">
+            <!--<BindableLayout.ItemTemplate>
+                <DataTemplate>
+
+                    <itemView:MasterItemContentView H1Value="{Binding HeaderOneName}"
+                                                    H2Value="{Binding HeaderTwoName}"
+                                                    H3Value="{Binding HeaderThreeName}">
+                    </itemView:MasterItemContentView>
+                    
+                    -->
+
+            <!--<Frame Style="{StaticResource ItemFrameStyle}">
+                        <Grid RowDefinitions="*">
+                            <StackLayout Grid.Row="0"
+                                         VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding HeaderOneName}"
+                                       Style="{StaticResource H1LabelStyle}" />
+                                <Label Text="{Binding HeaderTwoName}"
+                                       Style="{StaticResource H2LabelStyle}" />
+                                <Label Text="{Binding HeaderThreeName}"
+                                       Style="{StaticResource H3LabelStyle}" />
+                            </StackLayout>
+                            <BoxView Grid.Row="0"
+                                     Style="{StaticResource BoxViewItemStyle}" />
+                        </Grid>
+                    </Frame>-->
+            <!--
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>-->
+        </FlexLayout>
+        <!--<FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween" >
+
+            <itemView:MasterItemContentView BindingContext="{x:Reference mainPage}"
+                                            H1Value="Battery"
+                                            H2Value="{Binding Versions,Mode=TwoWay}"
+                                            H3Value="{Binding BatteryDetails.Powersource,Mode=TwoWay}">
+            </itemView:MasterItemContentView>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+                    <StackLayout Grid.Row="0"
+                                 VerticalOptions="CenterAndExpand">
+                        <Label Text="Ram" 
+                               Style="{StaticResource H1LabelStyle}" />
+                        <Label Text="{Binding RamDetails.PercentageUsed}"
+                               Style="{StaticResource H2LabelStyle}" />
+                        <Label Text="{Binding RamDetails.RamUsed}"
+                               Style="{StaticResource H3LabelStyle}" />
+                    </StackLayout>
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Memory" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="{Binding RomDetailsModel.PercentageMemory}" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="{Binding RomDetailsModel.AvailableMemory}" Style="{StaticResource H2LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Internet" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="{Binding ConnectivityDetailsModel.Connected}" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="{Binding ConnectivityDetailsModel.Profile}" Style="{StaticResource H3LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Wifi" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="Connected" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="Wifi-name" Style="{StaticResource H3LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Bluetooth" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="{Binding BluetoothDetailsModel.BluetoothStatus}" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="bluetooth-name" Style="{StaticResource H3LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Mobile Signal" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="{Binding SimDetails.SimStrength}" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="Good" Style="{StaticResource H3LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource ItemFrameStyle}">
+                <Grid RowDefinitions="*">
+
+                    <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand">
+                        <Label Text="Apps Installed" Style="{StaticResource H1LabelStyle}"/>
+                        <Label Text="{Binding SimDetails.SimStrength}" Style="{StaticResource H2LabelStyle}"/>
+                        <Label Text="" Style="{StaticResource H3LabelStyle}"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="0" Style="{StaticResource BoxViewItemStyle}" />
+                </Grid>
+            </Frame>
+
+
+            -->
+
+        <!--<Frame Padding="0" VerticalOptions="Fill" Margin="40" CornerRadius="40" BorderColor="Transparent" BackgroundColor="Transparent">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                <Label Text="Ram" TextColor="White"/>
+                <microcharts:ChartView HorizontalOptions="End" BackgroundColor="Transparent" HeightRequest="100" WidthRequest="120" x:Name="chartView" >
+                   
+                </microcharts:ChartView>
+            </StackLayout>
+            <ProgressBar HeightRequest="4" Margin="0" ProgressColor="Yellow" BackgroundColor="Transparent" Progress="0.3" VerticalOptions="End"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+
+                <Label HorizontalOptions="CenterAndExpand" Grid.Row="0" Text="{Binding Versions}" TextColor="GreenYellow" FontSize="24" FontAttributes="Bold"/>
+              
+                
+                <BoxView Grid.Row="0" Grid.RowSpan="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.1">
+                    <BoxView.Background>
+                        <LinearGradientBrush EndPoint="1,1">
+                            <GradientStop Color="LightGray"
+                          Offset="0.1" />
+                            <GradientStop Color="Transparent"
+                          Offset="0.9" />
+                        </LinearGradientBrush>
+
+                    </BoxView.Background>
+                </BoxView>
+            </Grid>
+            <Label HorizontalOptions="CenterAndExpand"  Text="{Binding Versions}" TextColor="GreenYellow" FontSize="10" FontAttributes="Bold"/>
+
+        </Frame>-->
+        <!--
+
+        </FlexLayout>-->
+    </ScrollView>
+</ContentPage>
